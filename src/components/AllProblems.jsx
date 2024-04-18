@@ -19,7 +19,7 @@ const AllProblems = () => {
     })
   }, [difficulty, selectedTags])
 
-  console.log(filteredData)
+
 
   const handleTagChange = (value) => {
     setSelectedTags(value);
@@ -73,7 +73,7 @@ const AllProblems = () => {
         <List
           header={<div>Problems</div>}
           bordered
-          dataSource={data ? filteredData : []}
+          dataSource={filteredData}
           renderItem={(item, index) => (
             <a href={"/questions/" + item._id}>
               <List.Item key={index}>
