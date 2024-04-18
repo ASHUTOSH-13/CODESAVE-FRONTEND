@@ -9,7 +9,7 @@ import items from "../utils/constants/Difficulty";
 const AllProblems = () => {
   console.log('All problems component renders');
   const [data, setData] = useState([]);
-  const [difficulty, setDifficulty] = useState("Difficulty");
+  const [difficulty, setDifficulty] = useState("Easy");
   const [selectedTags, setSelectedTags] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
@@ -50,7 +50,7 @@ const AllProblems = () => {
         <div className="d-flex mt-4 mb-4">
           <Dropdown menu={menuProps}>
             <Button>
-              <Space>{difficulty} { }</Space>
+              <Space>{difficulty}</Space>
               <DownOutlined />
             </Button>
           </Dropdown>
