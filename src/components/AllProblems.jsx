@@ -73,7 +73,7 @@ const AllProblems = () => {
         <List
           header={<div>Problems</div>}
           bordered
-          dataSource={filteredData}
+          dataSource={data || filteredData}
           renderItem={(item, index) => (
             <a href={"/questions/" + item._id}>
               <List.Item key={index}>
