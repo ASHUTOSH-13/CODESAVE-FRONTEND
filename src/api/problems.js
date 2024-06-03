@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://codesave.cyclic.app",
+  baseURL: "https://cs-backend-vgs5.onrender.com",
 });
